@@ -6,7 +6,6 @@ API Endpoints
 1. VisitWebsite
 Purpose: Track a visit to a website by a customer using a specific device.
 Method: POST
-URL: http://localhost:5000/VisitWebsite
 Body (JSON):
 json
 {
@@ -19,10 +18,10 @@ json
 {
   "message": "Visit tracked successfully"
 }
+
 2. GetWebsiteVisitCountForCustomer
 Purpose: Get the number of visits a specific customer has made to a specific website.
 Method: GET
-URL: http://localhost:5000/GetWebsiteVisitCountForCustomer
 Query Parameters:
 customerId (e.g., customer1)
 websiteId (e.g., website1)
@@ -33,10 +32,10 @@ json
   "website_id": "website1",
   "visit_count": 1
 }
+
 3. GetOverallWebsiteHitCount
 Purpose: Get the total number of visits to a specific website by all customers.
 Method: GET
-URL: http://localhost:5000/GetOverallWebsiteHitCount
 Query Parameters:
 websiteId (e.g., website1)
 Response:
